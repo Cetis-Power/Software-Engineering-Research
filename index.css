@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Zetta');
 
 :root {
   /* generic */
@@ -10,7 +10,8 @@
   --colorPrimary400: #7e57c2;
   --colorPrimary600: #5e35b1;
   --colorPrimary800: #4527a0;
-  --fontFamily: "Lora", sans-serif;
+  --colorPrimaryGray: #808080;
+  --fontFamily: "Lexend Zetta", sans-serif;
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 1.6rem;
   --fontSizeLg: 2.1rem;
@@ -55,10 +56,19 @@ body {
   width: 100vw;
   height: 100vh;
   color: #455A64;
-  background-color: black;
+  /*background-color: black;*/
+  background: url(17947.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: var(--fontFamily);
   font-size: var(--fontSizeMd);
   line-height: var(--lineHeightMd);
+}
+
+.Title {
+  color: black;
 }
 
 .Input {
@@ -86,7 +96,8 @@ body {
 
 .Input-text:focus {
   outline: none;
-  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimaryGray);
+  /*box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);*/
 }
 
 .Input-label {
